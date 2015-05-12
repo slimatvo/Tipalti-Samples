@@ -1,6 +1,6 @@
 <?php
 
-echo build_iframe_url("Demo1", "payeeToOpenHere", "FEVUEmSW41JnFY5GukJTM/l24usNpSQiuus3ySeoDGntOOGkqlBrp4Eu8tMrv506", ["firstName" => "John", "lastName" => "Smith"]);
+echo build_iframe_url("Demo1", "payeeToOpenHere", "FEVUEmSW41JnFY5GukJTM/l24usNpSQiuus3ySeoDGntOOGkqlBrp4Eu8tMrv506", ["first" => "John", "last" => "Smith"]);
 
 function build_iframe_url($payer_name, $payee_id, $secret_key, $parameters = null)
 {
@@ -24,7 +24,7 @@ function build_query_string($payer_name, $payee_id, $secret_key, $parameters = n
 	{
 		foreach ($parameters as $k => $v)
 		{
-			$qa_parts[urlencode($k)] = urlencode($v);
+			$qs_parts[urlencode($k)] = urlencode($v);
 		}
 	}
 	
