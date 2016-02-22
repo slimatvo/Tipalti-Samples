@@ -13,7 +13,7 @@ namespace Tipalti.CodeSamples
         private static void Main(string[] args)
         {
             //string baseUrl = "https://ui.tipalti.com"; //production
-            string baseUrl = "https://ui.sandbox.tipalti.com"; //integration
+            string baseUrl = "https://ui2.sandbox.tipalti.com"; //integration
 
             string payerName = "YourPayerNameHere";
             string payeeId = "payeeToOpenHere"; //the unique identifier for the payee
@@ -36,7 +36,7 @@ namespace Tipalti.CodeSamples
         {
             string queryString = CreateQueryString(payerName, payeeId, privateKey, parameters);
 
-            string pageToOpen = "/Payees/PayeeDashboard.aspx"; //to open the payment details iFrame. Change this to open a different iframe such as Payment History.
+            string pageToOpen = "/payeedashboard/home?"; //to open the payment details iFrame. Change this to open a different iframe such as Payment History.
 
             return string.Format("{0}{1}?{2}", baseUrl, pageToOpen, queryString);
         }
