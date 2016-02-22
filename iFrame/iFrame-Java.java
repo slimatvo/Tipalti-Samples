@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         //string baseUrl = "https://ui.tipalti.com"; //production
-        String baseUrl = "https://ui.sandbox.tipalti.com"; //integration
+        String baseUrl = "https://ui2.sandbox.tipalti.com"; //integration
 
         String payerName = "Demo1";
         String payeeId = "payeeToOpenHere"; //the unique identifier for the payee
@@ -32,7 +32,7 @@ public class Main {
     {
         String queryString = CreateQueryString(payerName, payeeId, privateKey, parameters);
 
-        String pageToOpen = "/Payees/PayeeDashboard.aspx"; //to open the payment details iFrame. Change this to open a different iframe such as Payment History.
+        String pageToOpen = "/payeedashboard/home?"; //to open the payment details iFrame. Change this to open a different iframe such as Payment History.
 
         return String.format("%s%s?%s", baseUrl, pageToOpen, queryString);
     }
