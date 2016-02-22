@@ -13,8 +13,8 @@ private_key = 'FEVUEmSW41JnFY5GukJTM/l24usNpSQiuus3ySeoDGntOOGkqlBrp4Eu8tMrv506'
 
 class Tipalti():
     def __init__(self, payer_name, payer_id, private_key, debug=False):
-        self.base_url = 'https://ui.sandbox.tipalti.com' if debug else \
-            'https://ui.tipalti.com'
+        self.base_url = 'https://ui2.sandbox.tipalti.com' if debug else \
+            'https://ui2.tipalti.com'
 
         self.params = OrderedDict()
         self.params['payer'] = payer_name
