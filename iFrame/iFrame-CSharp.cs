@@ -13,7 +13,7 @@ namespace Tipalti.CodeSamples
         private static void Main(string[] args)
         {
             //string baseUrl = "https://ui.tipalti.com"; //production
-            string baseUrl = "https://ui.sandbox.tipalti.com"; //integration
+            string baseUrl = "https://ui2.sandbox.tipalti.com"; //integration
 
             string payerName = "YourPayerNameHere";
             string payeeId = "payeeToOpenHere"; //the unique identifier for the payee
