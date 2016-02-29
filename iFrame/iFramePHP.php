@@ -5,7 +5,7 @@ echo build_iframe_url("Demo1", "payeeToOpenHere", "FEVUEmSW41JnFY5GukJTM/l24usNp
 function build_iframe_url($payer_name, $payee_id, $secret_key, $parameters = null)
 {
 	//$baseURL = "https://ui.tipalti.com"; //production
-	$baseURL = "https://ui.sandbox.tipalti.com"; //sandbox
+	$baseURL = "https://ui2.sandbox.tipalti.com"; //sandbox
 	
 	return $baseURL."/Payees/PayeeDashboard.aspx?".build_query_string($payer_name, $payee_id, $secret_key, $parameters);
 }
