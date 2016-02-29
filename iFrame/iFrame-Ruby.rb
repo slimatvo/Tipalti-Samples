@@ -4,7 +4,7 @@ require 'URI'
 
 def build_iframe_url(payer,payee_id,secret_key,parameters = nil)
 	#base_url = "https://ui.tipalti.com" #production
-	base_url = "https://ui.sandbox.tipalti.com" #sandbox
+	base_url = "https://ui2.sandbox.tipalti.com" #sandbox
 	
 	base_url + "/Payees/PayeeDashboard.aspx?" + build_query_string(payer,payee_id,secret_key,parameters)
 end
