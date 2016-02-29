@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         //string baseUrl = "https://ui.tipalti.com"; //production
-        String baseUrl = "https://ui.sandbox.tipalti.com"; //integration
+        String baseUrl = "https://ui2.sandbox.tipalti.com"; //integration
 
         String payerName = "Demo1";
         String payeeId = "payeeToOpenHere"; //the unique identifier for the payee
